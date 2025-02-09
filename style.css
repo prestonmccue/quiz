@@ -1,54 +1,66 @@
-/* Import Google Font */
+/* Import Google Font for clean typography */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #ffffff;
     margin: 0;
-}
-
-.quiz-container {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 0;
     text-align: center;
-    max-width: 500px;
-    width: 100%;
 }
 
+/* Header bar like MagiQuiz */
+.header {
+    background: #0066cc;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Center the quiz content */
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Large, bold question text */
 h1 {
-    font-size: 26px;
+    font-size: 28px;
     color: #333;
-    margin-bottom: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
-/* Improve answer buttons */
+/* Capsule-style answer buttons */
 .option {
     display: block;
     width: 100%;
     padding: 15px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
+    background-color: #0066cc;
     border: none;
-    border-radius: 10px;
-    background-color: #6a4dad;
+    border-radius: 50px;
+    margin: 15px 0;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    margin: 10px 0;
 }
 
+/* Hover effect for buttons */
 .option:hover {
-    background-color: #4CAF50;
+    background-color: #004c99;
     transform: scale(1.05);
 }
 
-/* Add soft fade-in effect */
+/* Smooth fade-in animation */
 .quiz-container {
     animation: fadeIn 0.8s ease-in-out;
 }
